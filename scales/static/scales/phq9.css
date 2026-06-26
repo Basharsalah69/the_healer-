@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(50, 127, 204);
+    color: aliceblue;
+}
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    cursor: pointer;
+}

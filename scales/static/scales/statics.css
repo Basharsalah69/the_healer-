@@ -1,0 +1,40 @@
+
+body{
+    background-color: rgb(226, 232, 232);
+}
+.main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+button{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size:xx-large
+
+
+}
+input:required{
+    background-color: red;
+}
+img{
+    border: none;
+    mix-blend-mode: multiply;
+    width: 600px;
+    
+}
+.logout{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.ph{
+    display: flex;
+    justify-content: right;
+     top:50px;
+    right: 10px;
+    
+    
+    
+}

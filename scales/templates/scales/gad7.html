@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+ {% load static %}
+<head>
+{% block "css_files" %}
+    <link rel="stylesheet" href="{% static "scales/gad7.css" %}">
+    {% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD7</title>
+</head>
+<body>    
+    <div class="div_1">
+
+    <h1>welcome will you please answer the following questions:</h1>
+    <form method="POST">
+        {% csrf_token %}
+    
+    <table border="3">
+        <caption>
+            THE GAD7 FORM
+        </caption>
+        <thead>
+            <tr>
+            <th>Question</th>
+        <th>Not at all</th>
+        <th>Several days</th>
+        <th>More than half of the days</th>
+        <th>Nearly every day</th>
+            </tr>
+        </thead>
+<tbody>
+    <tr>
+        <td>
+       1- Feeling nervous, anxious, or on edge.
+        </td>
+         <td>
+            <input type="radio" name="q_1" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_1" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_1" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_1" value="3">
+        </td>
+        </tr>
+        <tr>
+            <td>
+        2- Not being able to stop or control worrying
+        </td>
+        <td>
+            <input type="radio" name="q_2" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_2" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_2" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_2" value="3">
+        </td>
+        
+    </tr>
+    <tr>
+        <td>
+       3- Trouble relaxing.
+        </td>
+        <td>
+            <input type="radio" name="q_3" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_3" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_3" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_3" value="3">
+        </td>
+        </tr>
+        <tr>
+            <td>
+        4-Being so restless that it is hard to sit still
+        </td>
+        <td>
+            <input type="radio" name="q_4" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_4" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_4" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_4" value="3">
+        </td>
+        </tr>
+        <tr>
+            <td>
+       5- Becoming easily annoyed or irritable
+        </td>
+        <td>
+            <input type="radio" name="q_5" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_5" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_5" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_5" value="3">
+        </td>
+
+        </tr>
+        <tr>
+            <td>
+        6-Feeling afraid as if something awful might happen
+        </td>
+        <td>
+            <input type="radio" name="q_6" value="0">
+        </td>
+
+        <td>
+            <input type="radio" name="q_6" value="1">
+        </td>
+
+        <td>
+            <input type="radio" name="q_6" value="2">
+        </td>
+
+        <td>
+            <input type="radio" name="q_6" value="3">
+        </td>
+        </tr>
+        <tr>
+    <td>
+        7- Worrying too much about different things
+    </td>
+
+    <td>
+        <input type="radio" name="q_7" value="0">
+    </td>
+
+    <td>
+        <input type="radio" name="q_7" value="1">
+    </td>
+
+    <td>
+        <input type="radio" name="q_7" value="2">
+    </td>
+
+    <td>
+        <input type="radio" name="q_7" value="3">
+    </td>
+</tr>
+        </tbody>
+    </table>
+    <button type="submit" class="gad_button"> SUBMIT THE FORM</button>
+    </form>
+    </div>
+</body>
+</html>

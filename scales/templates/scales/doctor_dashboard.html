@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+     {% load static %}
+
+<head>
+    {% block css_files %}
+    <link rel="stylesheet" href="{% static "scales/doctors.css" %}">
+    
+    {% endblock  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+</head>
+<body>
+    <div>
+        <search>
+            <form method = "GET" action="{% url 'docs' %}">
+                 <label for="movie">Find a patient </label>
+      <input type="search" name="search" placeholder="Search patient username" />
+      <button type="submit">Search</button>
+            </form>
+        </search>
+    </div>
+    {% for item in assessment %}
+    <table class='tab' border="3">
+        <thead>
+            <tr>
+                <th>
+                    PATIENT NAME
+                </th>
+                <th>
+                    PHQ9
+
+                </th>
+                <th>
+                    GAD7
+
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                 {{ item.user.username }}    
+
+                </td>
+                <td>
+                    {{ item.score_phq9 }} 
+
+                </td>
+                <td>
+                     {{ item.score_gad7 }}
+                </td>
+            </tr>
+        </tbody>
+        -
+       
+    
+{% endfor %}
+</table>
+</body>
+</html>

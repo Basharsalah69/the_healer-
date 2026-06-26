@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%  load static  %}
+<head>
+    {% block css_files %}
+    <link rel="stylesheet" href='{% static "scales/sign_up.css" %}'>
+    {% endblock  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN_UP</title>
+</head>
+<body>
+    <form method="POST">
+{%csrf_token%}
+{{form.as_p}}
+<button type="submit">click here</button>
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

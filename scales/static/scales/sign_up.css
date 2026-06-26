@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: slategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    border-radius: 12px;
+    cursor: pointer;
+    color: rgba(19, 19, 18, 0.559);
+}

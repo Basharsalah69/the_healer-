@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color: black;
+
+}
+.no{
+    display: flex;
+    justify-content: center;
+    margin-top:350px;
+}

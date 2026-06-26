@@ -1,0 +1,11 @@
+.all{
+    background-color: rgba(14, 13, 13, 0.948);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    
+    
+}
+.in{
+    display: flex;
+    justify-content: center;
+}

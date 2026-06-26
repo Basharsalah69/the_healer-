@@ -1,0 +1,32 @@
+/* body{
+    background-color: rgb(107, 163, 152);
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    padding-top: 350px;
+} */
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #74b9ff,
+        #81ecec,
+        #a29bfe
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid{
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    border-radius: 20px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    {% block css_files %}
+    <link rel="stylesheet" href="{% static "scales/music.css" %}">
+    {% endblock  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width  , initial-scale=1.0">
+    <title>MUSIC THERAPY</title>
+</head>
+<body>
+    <div class='vid' >
+        <audio controls controlslist='nodownload'>
+            <source src="{% static 'scales/therapy_music_2min.wav' %}"
+                    type="audio/wav">
+        </audio>
+    </div>
+</body>
+</html>

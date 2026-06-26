@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    {% block css_files %}
+     <link rel="stylesheet" href="{%static "scales/statics.css" %}">
+     {% endblock  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSYCHOLGY FITNESSS</title>
+</head>
+<body>
+
+    <form  method="POST">
+     {% csrf_token %}
+    
+     
+     <img src="{% static "scales/Robin bird-cuate.png" %}" alt="bird">
+    <section class="main">
+       </form>
+    </section>
+    <section class='button'>
+    <div class="ph">
+        <a href= {% url "phq9" %}>
+        <button >PHQ9</button>
+        </a>
+        
+    </div>
+    <div class="g7">
+        <a href={% url "gad7" %}>
+        <button >GAD7</button>
+        </a>
+        
+    </div>
+    </section>
+    <div class='logout' > 
+      
+        <form method="POST" action="{% url "logout" %}">
+              {%csrf_token%}
+        
+        <button  type="submit" >LOGOUT</button>
+        </form>
+    </div>
+    
+</body>
+</html>
